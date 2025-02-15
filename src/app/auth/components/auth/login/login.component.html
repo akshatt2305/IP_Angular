@@ -10,7 +10,7 @@
       <div class="form-group" formControlName="password">
         <input type="password" placeholder="Password" formControlName="password"/>
         <div *ngIf="loginForm.get('password')?.errors?.['required']">Password is required </div>
-        
+        <div *ngIf="loginForm.get('password')?.errors?.['minlength']">Password must be at least 6 characters long </div>      
       </div>
       <input type="submit" class="btn btn-primary" value="Login" />
     </form>
