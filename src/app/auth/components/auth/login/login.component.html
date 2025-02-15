@@ -1,7 +1,7 @@
 <section class="container">
     <h1 class="large text-primary">Sign In</h1>
     <p class="lead"><i class="fas fa-user"></i> Sign into Your Account</p>
-    <form class="form" [formGroup]="loginForm">
+    <form class="form" [formGroup]="loginForm" style="color: aliceblue;">
       <div class="form-group" formControlName="email">
         <input type="email" placeholder="Email Address" formControlName="email"/>
         <div *ngIf="loginForm.get('email')?.errors?.['email']">Invalid email format</div>
